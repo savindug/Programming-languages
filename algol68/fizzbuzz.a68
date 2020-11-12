@@ -1,0 +1,15 @@
+main: (
+
+    FOR i FROM 1 TO 100
+    DO
+        IF i MOD 3 = 0 AND i MOD 5 = 0 THEN
+            printf (( $gl$, "FizzBuzz" ))
+        ELIF i MOD 3 = 0 THEN
+            printf (( $gl$,  "Fizz" ))
+        ELIF i MOD 5 = 0 THEN
+            printf (( $gl$,  "Buzz" ))
+        ELSE
+            printf (( $gl$,  i ))
+        FI
+    OD
+)
